@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_trr/install
+
+Name: local_map
+Description: Description of local_map
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -llocal_map
+Requires: roscpp std_msgs

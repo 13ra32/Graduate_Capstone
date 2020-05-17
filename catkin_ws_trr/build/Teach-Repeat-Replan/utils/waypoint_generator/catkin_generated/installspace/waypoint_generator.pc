@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_trr/install
+
+Name: waypoint_generator
+Description: Description of waypoint_generator
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

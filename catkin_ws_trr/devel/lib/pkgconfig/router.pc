@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_trr/devel
+
+Name: router
+Description: Description of router
+Version: 0.1.0
+Cflags: -I/home/ralexander/catkin_ws_trr/src/Teach-Repeat-Replan/simulation/router/include
+Libs: -L${prefix}/lib 
+Requires: roscpp nav_msgs pluginlib std_msgs quadrotor_msgs mission_template geometry_msgs nodelet uav_utils state_machine mission_template

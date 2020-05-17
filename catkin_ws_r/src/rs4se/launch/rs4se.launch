@@ -1,0 +1,83 @@
+<launch>
+  <!-- INTEL REALSENSE D435i-->
+  <node pkg="rs4se" type="rs4se" name="rs" required="true" output="screen">
+    <param name="global_time" type="bool" value="true" />
+
+    <!-- RGBD -->
+    <param name="enable_rgb"       type="bool"   value="true" />
+    <param name="enable_ir"        type="bool"   value="true" />
+    <param name="enable_depth"     type="bool"   value="true" />
+    <param name="enable_emitter"   type="bool"   value="false" />
+    <param name="rgb_width"        type="int"    value="640"/>
+    <param name="rgb_height"       type="int"    value="480"/>
+    <param name="rgb_frame_rate"   type="int"    value="30"/>
+    <param name="rgb_format"       type="str"    value="RGB8" />
+    <param name="rgb_exposure"     type="double" value="350" />
+    <param name="ir_width"         type="int"    value="640" />
+    <param name="ir_height"        type="int"    value="480" />
+    <param name="ir_format"        type="str"    value="Y8" />
+    <param name="ir_frame_rate"    type="int"    value="30" />
+    <param name="ir_exposure"      type="double" value="15000" />
+    <param name="depth_width"      type="int"    value="640" />
+    <param name="depth_height"     type="int"    value="480" />
+    <param name="depth_format"     type="str"    value="Z16" />
+    <param name="depth_frame_rate" type="int"    value="30" />
+
+    <!-- MOTION -->
+    <param name="enable_motion" type="bool"   value="true" />
+    <param name="gyro_hz"       type="double" value="400" />
+    <param name="accel_hz"      type="double" value="250" />
+  </node>
+
+<!--   <node pkg="nodelet" type="nodelet" name="manager" args="manager" />
+  <node pkg="nodelet" type="nodelet" name="dpt2pc2"
+        args="load depth_image_proc/point_cloud_xyzrgb manager">
+    <remap from="rgb/camera_info" to="/rs/depth0/camera_info" />
+    <remap from="rgb/image_rect_color" to="/rs/rgb0/image" />
+    <remap from="depth_registered/image_rect" to="/rs/depth0/image" />
+    <remap from="depth_registered/points" to="/rs/depth0/pointcloud" />
+    <param name="queue_size" type="int" value="30" />
+  </node> -->
+
+<!--   <node pkg="nodelet" type="nodelet" args="manager"
+        name="manager" output="screen" /> -->
+
+<!--   <node pkg="nodelet" type="nodelet" name="metric_rect"
+        args="load depth_image_proc/convert_metric manager">
+    <remap from="image_raw" to="/rs/depth0/image" />
+    <remap from="image"     to="/rs/depth0/image_converted" />
+  </node> -->
+
+  <!-- Disable image transport plugins -->
+  <group ns="rs/rgb0/image" >
+    <rosparam param="disable_pub_plugins">
+      - "image_transport/compressed"
+      - "image_transport/compressedDepth"
+      - "image_transport/theora"
+    </rosparam>
+  </group>
+
+  <group ns="rs/ir0/image" >
+    <rosparam param="disable_pub_plugins">
+      - "image_transport/compressed"
+      - "image_transport/compressedDepth"
+      - "image_transport/theora"
+    </rosparam>
+  </group>
+
+  <group ns="rs/ir1/image" >
+    <rosparam param="disable_pub_plugins">
+      - "image_transport/compressed"
+      - "image_transport/compressedDepth"
+      - "image_transport/theora"
+    </rosparam>
+  </group>
+
+  <group ns="rs/depth0/image" >
+    <rosparam param="disable_pub_plugins">
+      - "image_transport/compressed"
+      - "image_transport/compressedDepth"
+      - "image_transport/theora"
+    </rosparam>
+  </group>
+</launch>

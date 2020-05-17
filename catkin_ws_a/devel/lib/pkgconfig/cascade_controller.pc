@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_a/devel
+
+Name: cascade_controller
+Description: Description of cascade_controller
+Version: 0.1.0
+Cflags: -I/home/ralexander/catkin_ws_a/devel/include -I/home/ralexander/catkin_ws_a/src/ground_station/simulation/cascade_control/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs quadrotor_msgs geometry_msgs nav_msgs uav_utils

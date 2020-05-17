@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ralexander/catkin_ws_a/src/ground_station/polyhedron_generator/include/polyhedron_generator/cluster_engine_cpu.h
+iostream
+-
+limits
+-
+math.h
+-
+
+/home/ralexander/catkin_ws_a/src/ground_station/polyhedron_generator/src/cluster_engine_cpu.cpp
+polyhedron_generator/cluster_engine_cpu.h
+/home/ralexander/catkin_ws_a/src/ground_station/polyhedron_generator/src/polyhedron_generator/cluster_engine_cpu.h
+

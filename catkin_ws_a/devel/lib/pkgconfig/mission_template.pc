@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_a/devel
+
+Name: mission_template
+Description: Description of mission_template
+Version: 0.1.0
+Cflags: -I/home/ralexander/catkin_ws_a/src/ground_station/simulation/mission_template/include
+Libs: -L${prefix}/lib -lmission_template
+Requires: roscpp pluginlib std_msgs quadrotor_msgs geometry_msgs nav_msgs nodelet uav_utils state_machine

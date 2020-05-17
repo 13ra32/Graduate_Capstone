@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_trr/install
+
+Name: trr_local_replanner
+Description: Description of trr_local_replanner
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: local_map

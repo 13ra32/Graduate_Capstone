@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_a/devel
+
+Name: map_server
+Description: Description of map_server
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

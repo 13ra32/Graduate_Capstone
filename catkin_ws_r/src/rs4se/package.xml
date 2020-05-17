@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rs4se</name>
+  <version>0.9.0</version>
+  <description>
+    This package aims to offer reliable timestamped image and IMU streams for mission-critical tasks such as visual-inertial odometry.
+  </description>
+  <maintainer email="shuxiao.chen@berkeley.edu">Shu Chen</maintainer>
+  <license>BSD</license>
+  <author>Shu Chen</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

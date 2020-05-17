@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_a/devel
+
+Name: polyhedron_generator
+Description: Description of polyhedron_generator
+Version: 0.0.1
+Cflags: -I/home/ralexander/catkin_ws_a/src/ground_station/polyhedron_generator/include
+Libs: -L${prefix}/lib -lpoly_convexify
+Requires: rospy std_msgs sensor_msgs visualization_msgs

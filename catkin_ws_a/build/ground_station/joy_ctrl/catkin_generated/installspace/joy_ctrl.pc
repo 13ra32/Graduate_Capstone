@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_a/install
+
+Name: joy_ctrl
+Description: Description of joy_ctrl
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -ljoy_ctrl
+Requires: geometry_msgs nav_msgs roscpp std_msgs sensor_msgs tf

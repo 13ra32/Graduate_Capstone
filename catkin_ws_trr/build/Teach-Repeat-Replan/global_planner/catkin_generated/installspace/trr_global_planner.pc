@@ -1,0 +1,8 @@
+prefix=/home/ralexander/catkin_ws_trr/install
+
+Name: trr_global_planner
+Description: Description of trr_global_planner
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

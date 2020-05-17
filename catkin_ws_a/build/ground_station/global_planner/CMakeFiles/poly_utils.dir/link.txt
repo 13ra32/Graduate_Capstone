@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/ralexander/catkin_ws_a/devel/lib/libpoly_utils.a  CMakeFiles/poly_utils.dir/src/utils/poly_utils.cpp.o CMakeFiles/poly_utils.dir/third_party/quickhull/QuickHull.cpp.o
+/usr/bin/ranlib /home/ralexander/catkin_ws_a/devel/lib/libpoly_utils.a

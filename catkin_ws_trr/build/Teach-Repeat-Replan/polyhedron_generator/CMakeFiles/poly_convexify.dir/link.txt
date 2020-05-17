@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/ralexander/catkin_ws_trr/devel/lib/libpoly_convexify.a  CMakeFiles/poly_convexify.dir/src/cluster_server_cpu.cpp.o CMakeFiles/poly_convexify.dir/src/cluster_engine_cpu.cpp.o
+/usr/bin/ranlib /home/ralexander/catkin_ws_trr/devel/lib/libpoly_convexify.a

@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="cascade_controller" pkg="cascade_controller" type="cascade_controller">
+  <param name="K_pxy" type="double" value="3.3" />
+  <param name="K_pz" type="double" value="3.5" />
+  <param name="K_vxy" type="double" value="2.5" />
+  <param name="K_vz" type="double" value="2.8" />
+</node>
+\endverbatim
+

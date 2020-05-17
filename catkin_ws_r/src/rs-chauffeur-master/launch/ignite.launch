@@ -1,0 +1,65 @@
+<launch>
+  <!-- RealSense Chauffeur -->
+  <node pkg="rs_chauffeur" type="rs_chauffeur" name="rc" required="true" output="screen">
+    <!-- Infrared/depth/laser module -->
+    <param name="enable_infrared_left"    type="bool"   value="true"/>
+    <param name="enable_infrared_right"   type="bool"   value="true"/>
+    <param name="enable_depth"            type="bool"   value="true"/>
+    <param name="enable_laser"            type="bool"   value="false"/>
+    <param name="infrared_width"          type="int"    value="640"/>
+    <param name="infrared_height"         type="int"    value="480"/>
+    <param name="infrared_fps"            type="int"    value="60"/>
+    <param name="infrared_exposure"       type="double" value="8500"/>
+    <param name="frame_id_infrared_left"  type="str"    value="camera"/>
+    <param name="frame_id_infrared_right" type="str"    value="camera"/>
+    <param name="frame_id_depth"          type="str"    value="camera"/>
+    <!-- Colour module -->
+    <param name="enable_colour"           type="bool"   value="true"/>
+    <param name="colour_width"            type="int"    value="640"/>
+    <param name="colour_height"           type="int"    value="480"/>
+    <param name="colour_fps"              type="int"    value="60"/>
+                <!-- Negative values = auto exposure -->
+    <param name="colour_exposure"         type="double" value="-1"/>
+    <param name="frame_id_colour"         type="str"    value="camera"/>
+    <!-- Motion module -->
+    <param name="enable_motion"           type="bool"   value="true"/>
+    <param name="freq_accel"              type="int"    value="250"/>
+    <param name="freq_gyro"               type="int"    value="400"/>
+    <param name="frame_id_motion"         type="str"    value="motion"/>
+    <!-- Performance monitor -->
+    <param name="enable_fps_monitor"      type="bool"   value="true"/>
+  </node>
+
+  <!-- Disable image transport compression -->
+  <group ns="rc/colour/image" >
+    <rosparam param="disable_pub_plugins">
+      - "image_transport/compressed"
+      - "image_transport/compressedDepth"
+      - "image_transport/theora"
+    </rosparam>
+  </group>
+
+  <group ns="rc/infrared/left/image" >
+    <rosparam param="disable_pub_plugins">
+      - "image_transport/compressed"
+      - "image_transport/compressedDepth"
+      - "image_transport/theora"
+    </rosparam>
+  </group>
+
+  <group ns="rc/infrared/right/image" >
+    <rosparam param="disable_pub_plugins">
+      - "image_transport/compressed"
+      - "image_transport/compressedDepth"
+      - "image_transport/theora"
+    </rosparam>
+  </group>
+
+  <group ns="rc/depth/image" >
+    <rosparam param="disable_pub_plugins">
+      - "image_transport/compressed"
+      - "image_transport/compressedDepth"
+      - "image_transport/theora"
+    </rosparam>
+  </group>
+</launch>

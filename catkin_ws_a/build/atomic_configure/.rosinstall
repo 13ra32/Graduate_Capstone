@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ralexander/catkin_ws_a/devel/setup.sh

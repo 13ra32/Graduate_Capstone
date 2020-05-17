@@ -1,0 +1,47 @@
+<launch>
+  <node pkg="surfel_fusion" type="surfel_fusion" name="surfel_fusion" clear_params="true" output="screen">
+
+    <!-- camera parameter -->
+    <param name="cam_width"  value="640" />
+    <param name="cam_height" value="480" />
+
+    <!--input image info-->
+    <param name="cam_fx" value="390.15472412109375" />
+    <param name="cam_fy" value="390.15472412109375" />
+    <param name="cam_cx" value="320.4252014160156" />
+    <param name="cam_cy" value="246.77757263183594" />
+
+    <param name="ric00" value="-1.2667911031140977e-01" />
+    <param name="ric01" value="-1.1420114444155305e-02" />
+    <param name="ric02" value="9.9187800862646003e-01" />
+
+    <param name="ric10" value="-9.9162551264078624e-01" />
+    <param name="ric11" value="-2.3869007035934642e-02" />
+    <param name="ric12" value="-1.2692168129605097e-01" />
+
+    <param name="ric20" value="2.5124603292539460e-02" />
+    <param name="ric21" value="-9.9964986444714765e-01" />
+    <param name="ric22" value="-8.3007722647727711e-03" />
+
+    <param name="tic0" value="0.06" />
+    <param name="tic1" value="0.0" />
+    <param name="tic2" value="0.03" />
+
+    <!-- fusion parameter, all in meter -->
+    <param name="fuse_far_distence"  value="3.0" />
+    <param name="fuse_near_distence" value="0.1" />
+
+    <!-- for deform the map -->
+    <param name="drift_free_poses" value="300" />
+
+    <!-- for data save -->
+    <remap from="~image" to="/rs/ir0/image" />
+    <remap from="~depth" to="/rs/depth0/image" />
+    <remap from="~loop_path" to="/pose_graph/pose_graph_path" />
+    <remap from="~extrinsic_pose" to="/vins_estimator/extrinsic" />
+  </node>
+
+  <node pkg="map_server" type="map_server" name="map_server">
+      <param name="save_name" value="$(find surfel_fusion)/model" />
+  </node>
+</launch>
