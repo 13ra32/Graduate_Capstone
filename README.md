@@ -8,6 +8,8 @@ TRR_With_Custom_Map.sh includes all terminal commands to run the program.
 
 Simulation Instruction Document contains on overview of how to operate the code, installation dependencies, and description of how to modify the output
 
+Once the code is installed, use the videos below to run the program.
+
 https://drive.google.com/open?id=1mOaSCpTJieUQ3cFGDOCdT7mwziT2xOgW
 
 https://drive.google.com/open?id=1zMSyWv-TfmQJRrOvJVQmEUx24sPxNPSg
