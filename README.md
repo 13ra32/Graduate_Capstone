@@ -5,7 +5,9 @@ In collaboration with the Hybrid Robotics Laboratory at UC Berkeley, we develope
 I managed our projects transition though the COVID-19 crisis by collaborating with all involved parties to modify our project objectives to be attainable with limited resources while satisfying stakeholder needs. From a technical standpoint I created the software pipeline by identifying state-of-the-art open source perception and path planning software, modifying and combining this software into a single package, and creating a well documented and easy follow process for use. 
 
 Relevant Skills: 
+
 •	Crisis management, team management and project planning. 
+
 •	ROS package programing and management. Perception – SLAM software experience and implementation (VINS-Mono / Surfel-Fusion, Intel D435i Depth Camera). 
 
 
