@@ -14,3 +14,5 @@ Once the code is installed, use the videos below to run the program.
 https://drive.google.com/open?id=1mOaSCpTJieUQ3cFGDOCdT7mwziT2xOgW
 
 https://drive.google.com/open?id=1zMSyWv-TfmQJRrOvJVQmEUx24sPxNPSg
+
+Link to the final presentation: https://drive.google.com/open?id=1DWG8kx2Mh4NUdXWnB35eSfW9XLHJuGiE
