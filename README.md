@@ -1,17 +1,7 @@
 # Autonomous Drone Racing with Camera Based State Estimation
 
-In collaboration with the Hybrid Robotics Laboratory at UC Berkeley, we developed autonomous flight technology in the form of state estimation and path planning software for an autonomous racing quadcopter. The result was a software pipeline that: creates a point cloud map of an indoor or outdoor racetrack using an Intel D435i depth camera and identifies the optimum global trajectory though the racetrack. Additionally, we presented an obstacle avoidance routine in MATLAB that used Model Predictive Control to avoid any unmapped obstacles along the global path.
-
-I managed our projects transition though the COVID-19 crisis by collaborating with all involved parties to modify our project objectives to be attainable with limited resources while satisfying stakeholder needs. From a technical standpoint I created the software pipeline by identifying state-of-the-art open source perception and path planning software, modifying and combining this software into a single package.
-
-Relevant Skills: 
-
-•	Crisis management, team management and project planning. 
-
-•	ROS package programing and management. Perception – SLAM software experience and implementation (VINS-Mono / Surfel-Fusion, Intel D435i Depth Camera). 
-
-
-
+In collaboration with the Hybrid Robotics Laboratory at UC Berkeley, we developed autonomous flight technology in the form of state estimation and path planning software for an autonomous racing quadcopter. The result was a software pipeline that creates a point cloud map of an indoor or outdoor racetrack using an Intel D435i depth camera and identifies the optimum global trajectory though the racetrack.
+ 
 
 ## Description
 This repository contains the ROS code for running the mapping – planning software framework for the Autonomous Drone Racing Using Camera Based State Estimation capstone project. The code is presented in three separate catkin workspaces. 
